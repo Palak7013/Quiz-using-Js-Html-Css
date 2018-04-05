@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+
+   <title >Quiz</title>
+   <script src="Quiz.js"> </script>
+
+   <link type="text/css" href="Qstyle.css" rel="stylesheet">
+
+</head>
+
+ <body>
+
+   <div id="welcome">
+     <h1> WELCOME TO JAVASCRIPT<br> QUIZ </h1>
+     <br><h1 id="wel"></h1><br>
+     <input id="Start" type="button" value="Start Quiz" onclick="start(0)">
+   </div>
+   <div id="Q1">
+     <form name="myform1" onsubmit="Marks(1)">
+       <h1>Q1 Javascript is a :<br><br></h1>
+       <h2><b><input type="radio" name="options" value="Programming">Programming Language<br><br>
+       <input type="radio" name="options" value="Rendering">Rendering language<br><br>
+       <input type="radio" name="options" value="Scripting">Scripting language<br><br>
+       <input type="radio" name="options" value="Both">Both Programming and Scripting</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(1)">
+     </form>
+   </div>
+
+   <div id="Q2">
+     <form name="myform2" onsubmit="Marks(2)">
+       <h1>Q2 Which tag contains javascript code :<br><br></h1>
+       <h2><b><input type="radio" name="options" value="body">Body<br><br>
+       <input type="radio" name="options" value="style">Style<br><br>
+       <input type="radio" name="options" value="code">Code<br><br>
+       <input type="radio" name="options" value="script">Script</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(2)">
+     </form>
+   </div>
+
+   <div id="Q3">
+     <form name="myform3" onsubmit="Marks(3)">
+       <h1>Q3 Which attribute of script tag is used for adding external javascript file :<br><br></h1>
+       <h2><b><input type="radio" name="options" value="href">href<br><br>
+       <input type="radio" name="options" value="src">src<br><br>
+       <input type="radio" name="options" value="id">id<br><br>
+       <input type="radio" name="options" value="style">style</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(3)">
+     </form>
+   </div>
+
+   <div id="Q4">
+     <form name="myform4" onsubmit="Marks(4)">
+       <h1>Q4 Which of the following is a javascript comment:<br><br></h1>
+       <h2><b><input type="radio" name="options" value="%%">%%This is a comment<br><br>
+       <input type="radio" name="options" value="**">**This is a comment<br><br>
+       <input type="radio" name="options" value="//">//This is a comment<br><br>
+       <input type="radio" name="options" value="#">#This is a comment</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(4)">
+     </form>
+   </div>
+
+   <div id="Q5">
+     <form name="myform5" >
+       <h1>Q5 Which keyword is used to tell javascript that we are going to work with a variable:<br><br></h1>
+       <h2><b><input type="radio" name="options" value="int">int<br><br>
+       <input type="radio" name="options" value="var">var<br><br>
+       <input type="radio" name="options" value="variable">variable<br><br>
+       <input type="radio" name="options" value="vrb">vrb</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(5)">
+     </form>
+   </div>
+
+   <div id="Q6">
+     <form name="myform6" >
+       <h1>Q6 What characters cannot be used in variable name :<br><br></h1>
+       <h2><b><input type="radio" name="options" value="special">Special Symbols(%,#,$...)<br><br>
+       <input type="radio" name="options" value="underscore">Underscore sign(_)<br><br>
+       <input type="radio" name="options" value="number">Numbers<br><br>
+       <input type="radio" name="options" value="letter">Letters</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(6)">
+     </form>
+   </div>
+
+   <div id="Q7">
+     <form name="myform7" >
+       <h1>Q7 Increment and Decrement operators are used for :<br><br></h1>
+       <h2><b><input type="radio" name="options" value="addsub">Adding or subtracting 1 from a number<br><br>
+       <input type="radio" name="options" value="sign">To change the sign of a number<br><br>
+       <input type="radio" name="options" value="remainder">To set the reaminder of the division of two numbers<br><br>
+       <input type="radio" name="options" value="none">None of the above</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(7)">
+     </form>
+   </div>
+
+   <div id="Q8">
+     <form name="myform8" >
+       <h1>Q8 Logical AND(&&) returns true if :<br><br></h1>
+       <h2><b><input type="radio" name="options" value="both">Both operands are true<br><br>
+       <input type="radio" name="options" value="only1">If only one of the operands is true<br><br>
+       <input type="radio" name="options" value="one">If one of the operands is true, but not both<br><br>
+       <input type="radio" name="options" value="None ">None of the above</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(8)">
+     </form>
+   </div>
+
+   <div id="Q9">
+     <form name="myform9" >
+       <h1>Q9 What is the output of this code :<br>var x = "50";<br>var y = "100";<br>document.write(x+y);<br><br></h1>
+       <h2><b><input type="radio" name="options" value="150">150<br><br>
+       <input type="radio" name="options" value="50100">50100<br><br>
+       <input type="radio" name="options" value="nan">NaN<br><br>
+       <input type="radio" name="options" value="Null ">Null</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(9)">
+     </form>
+   </div>
+
+   <div id="Q10">
+     <form name="myform10" >
+       <h1>Q10 The else statement is created to:<br><br></h1>
+       <h2><b><input type="radio" name="options" value="ignore">Ignore the condition testing<br><br>
+       <input type="radio" name="options" value="tell">Tell javascript to execute something if the condition is false <br><br>
+       <input type="radio" name="options" value="test">Test a new condition for true or falseS<br><br>
+       <input type="radio" name="options" value="all ">All of the above</b></h2><br><br>
+       <input class="btn submit" type="button" value="Next" onclick="start(10)">
+     </form>
+   </div>
+
+
+   <div id="Score">
+     <h1 id="10"></h1><br>
+     <h1>Your Score is </h1>
+     <h1 id="result"></h1>
+   </div>
+
+
+
+   <script>
+
+     var a ;
+     a = prompt("Please Enter your Full Name "," ");
+     document.getElementById("wel").innerHTML = a ;
+     document.getElementById("Q1").style.display="none";
+     document.getElementById("Q2").style.display="none";
+     document.getElementById("Q3").style.display="none";
+     document.getElementById("Q4").style.display="none";
+     document.getElementById("Q5").style.display="none";
+     document.getElementById("Q6").style.display="none";
+     document.getElementById("Q7").style.display="none";
+     document.getElementById("Q8").style.display="none";
+     document.getElementById("Q9").style.display="none";
+     document.getElementById("Q10").style.display="none";
+     document.getElementById("Score").style.display="none";
+
+
+    </script>
+</body>
+
+</html>
